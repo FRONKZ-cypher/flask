@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <h1>หน้าหลัก</h1>
+    <p>นี่คือเว็บไซต์ที่สร้างด้วย <strong>Flask</strong></p>
+</div>
+<div>
+   <h1>
+
+   </h1>
+</div>
+<div >
+    <img src="{{url_for('static',filename='img/181263_201219_0.jpg')}}"   width = 300 alt="Person">
+</div>
+<div>
+    <p>
+       สวัสดีครับ ผมขอแนะนำตัวนะครับ ผมชื่อ นายกันตวัฒน์ แก้ววิเชียร อยู่ชั้นมัธยมศึกษาปีที่ 6 ขณะนี้ศึกษาอยู่ที่โรงเรียนเตรียมอุดมศึกษาน้อมเกล้าครับ
+    </p>
+    <p>
+        เว็บไซต์นี้จัดทำเพื่อนำ plot ของหุ้นจากบริษัท Apple มาแสดงเป็น candlestick ด้วย bokeh(library ของ python ครับ)
+    </p>
+</div>
+{% endblock %}

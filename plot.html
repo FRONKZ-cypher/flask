@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<script type="text/javascript" src={{cdn_js | safe}}></script>
+<div class="about">
+    <h1>Python Web App</h1>
+    <p>กราฟที่แสดงอยู่นี้คือกราฟ candlestick ของหุ้นบริษัท APPLE</p>
+    <p>โดยใช้ library ชื่อ <strong>pandas_datareader</strong> ในการดึงข้อมูลและใช้ <strong>bokeh</strong> ในการนำข้อมูลมาแสดงเป็น candlestick ครับ</p>
+    <p>ราคาหุ้นที่แดงอยู่นี้คือช่วงระหว่างวันที่ 30/12/2019 - 19/12/2020</p>
+</div>
+
+{{script1 | safe}}
+{{div1 | safe}}
+<img id="graph" src="{{url_for('static',filename='img/undraw_Data_re_80ws.png')}}"  
+ >
+{% endblock %}
